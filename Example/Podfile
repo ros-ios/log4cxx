@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'log4cxx_Example', :exclusive => true do
+  pod 'log4cxx', :path => '../'
+end
+
+target 'log4cxx_Tests', :exclusive => true do
+  pod 'log4cxx', :path => '../'
+
+  
+end
