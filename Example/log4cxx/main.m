@@ -6,7 +6,7 @@
 //  Copyright (c) 2016 Furushchev. All rights reserved.
 //
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 #import "ROSAppDelegate.h"
 
 int main(int argc, char * argv[])

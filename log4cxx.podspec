@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = "log4cxx"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of log4cxx."
+  s.version          = "0.10.0"
+  s.summary          = "Logging Library for ROSiOS"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,24 +17,22 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+This is a log4cxx framework for ROSiOS
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/log4cxx"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
-  s.license          = 'MIT'
+  s.homepage         = "https://github.com/ros-ios/log4cxx"
+  s.license          = 'log4cxx'
   s.author           = { "Furushchev" => "furushchev@jsk.imi.i.u-tokyo.ac.jp" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/log4cxx.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/ros-ios/log4cxx.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'log4cxx' => ['Pod/Assets/*.png']
-  }
+  s.ios.source_files = "Pod/include/**/*.{h,hpp,ipp}"
+  s.ios.header_mappings_dir = "Pod/include"
+  s.ios.public_header_files = "Pod/include/**/*.{h,hpp,ipp}"
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.ios.preserve_paths = "Pod/include/**/*.{h,hpp,ipp}", "Pod/lib/liblog4cxx.a"
+  s.ios.vendored_libraries = "Pod/lib/liblog4cxx.a"
+
 end

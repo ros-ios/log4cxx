@@ -6,9 +6,11 @@
 //  Copyright (c) 2016 Furushchev. All rights reserved.
 //
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 @interface ROSAppDelegate : UIResponder <UIApplicationDelegate>
+
++ (void)testLog4cxx;
 
 @property (strong, nonatomic) UIWindow *window;
 

@@ -1,0 +1,14 @@
+PODS:
+  - log4cxx (0.10.0)
+
+DEPENDENCIES:
+  - log4cxx (from `../`)
+
+EXTERNAL SOURCES:
+  log4cxx:
+    :path: ../
+
+SPEC CHECKSUMS:
+  log4cxx: 7f13aadb46975a806b4c36f717b462a30fdf9815
+
+COCOAPODS: 0.39.0
