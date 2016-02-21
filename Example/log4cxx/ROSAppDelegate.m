@@ -8,26 +8,9 @@
 
 #import "ROSAppDelegate.h"
 
-#include <log4cxx/logger.h>
-#include <log4cxx/xml/domconfigurator.h>
-
 @implementation ROSAppDelegate
 
-+ (void)testLog4cxx
-{
-    NSString *logdir = NSTemporaryDirectory();
-    setenv("LOG_DIR", [logdir UTF8String], 1);
-    std::string configpath = std::string([[[NSBundle mainBundle] pathForResource:@"config" ofType:@"xml"] UTF8String]);
-    log4cxx::xml::DOMConfigurator::configure(configpath);
-    log4cxx::LoggerPtr log(log4cxx::Logger::getRootLogger());
-    
-    NSLog(@"Start Logging");
-    for (int i = 0; i < 100; i++) {
-        LOG4CXX_INFO(log, "logging 100 times");
-    }
-    NSLog(@"End Logging");
-    
-}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

@@ -10,4 +10,6 @@
 
 @interface ROSViewController : UIViewController
 
++ (void)testLog4cxx;
+
 @end

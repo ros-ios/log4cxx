@@ -7,7 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "ROSAppDelegate.h"
+#import "ROSViewController.h"
+
 @interface Tests : XCTestCase
 
 @end
@@ -35,7 +36,7 @@
         [man removeItemAtPath:path error:&err];
     }
     
-    [ROSAppDelegate testLog4cxx];
+    [ROSViewController testLog4cxx];
     sleep(5);
 
     NSString *log = [NSString stringWithContentsOfFile:path

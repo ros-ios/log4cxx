@@ -10,8 +10,6 @@
 
 @interface ROSAppDelegate : UIResponder <UIApplicationDelegate>
 
-+ (void)testLog4cxx;
-
 @property (strong, nonatomic) UIWindow *window;
 
 @end
