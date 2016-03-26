@@ -1,9 +1,6 @@
 # log4cxx
 
 [![CI Status](http://img.shields.io/travis/ros-ios/log4cxx.svg?style=flat)](https://travis-ci.org/ros-ios/log4cxx)
-[![Version](https://img.shields.io/cocoapods/v/log4cxx.svg?style=flat)](http://cocoapods.org/pods/log4cxx)
-[![License](https://img.shields.io/cocoapods/l/log4cxx.svg?style=flat)](http://cocoapods.org/pods/log4cxx)
-[![Platform](https://img.shields.io/cocoapods/p/log4cxx.svg?style=flat)](http://cocoapods.org/pods/log4cxx)
 
 ## Usage
 
